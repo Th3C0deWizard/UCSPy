@@ -1,0 +1,148 @@
+{
+  "proffesors": [
+    {
+      "name": "Juan David",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 8,
+            "end": 10
+          },
+          {
+            "start": 14,
+            "end": 18
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 7,
+            "end": 12
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 15,
+            "end": 17
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dairon Rua",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 8,
+            "end": 10
+          },
+          {
+            "start": 14,
+            "end": 18
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 7,
+            "end": 12
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 9,
+            "end": 12
+          }
+        ]
+      }
+    }
+  ],
+  "classrooms": [
+    {
+      "name": "F-402",
+      "capacity": 20,
+      "type": "Systems"
+    },
+    {
+      "name": "F-405",
+      "capacity": 15,
+      "type": "Systems"
+    },
+    {
+      "name": "F-301",
+      "capacity": 25,
+      "type": "Basic"
+    },
+    {
+      "name": "F-206",
+      "capacity": 22,
+      "type": "Basic"
+    }
+  ],
+  "classrooms_types": ["Systems", "Basic"],
+  "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "study_times": [
+    {
+      "start": 7,
+      "end": 12
+    },
+    {
+      "start": 14,
+      "end": 18
+    }
+  ],
+  "courses": [
+    {
+      "name": "Algoritmos G1",
+      "potential_professors": ["Juan David"],
+      "semester": 1,
+      "subject": "Algoritmos",
+      "quotas": 20,
+      "sessions": [
+        {
+          "classroom_type": "Systems",
+          "duration": 2
+        },
+        {
+          "classroom_type": "Systems",
+          "duration": 2
+        }
+      ],
+      "study_time": 0
+    },
+    {
+      "name": "Estadistica G1",
+      "potential_professors": ["Juan David", "Dairon Rua"],
+      "semester": 1,
+      "subject": "Estadistica",
+      "quotas": 15,
+      "sessions": [
+        {
+          "classroom_type": "Systems",
+          "duration": 2
+        },
+        {
+          "classroom_type": "Basic",
+          "duration": 3
+        }
+      ],
+      "study_time": 1
+    },
+    {
+      "name": "Calculo G1",
+      "potential_professors": ["Dairon Rua"],
+      "semester": 1,
+      "subject": "Calculo",
+      "quotas": 22,
+      "sessions": [
+        {
+          "classroom_type": "Basic",
+          "duration": 2
+        },
+        {
+          "classroom_type": "Basic",
+          "duration": 2
+        }
+      ],
+      "study_time": 0
+    }
+  ]
+}

@@ -14,6 +14,3 @@ class CSPSolver:
 
     def select_variable(self):
         pass
-
-    def assign_value(self, variable):
-        pass
