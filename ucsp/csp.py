@@ -24,3 +24,6 @@ class CSP:
 
     def equals_variable(self, variable, new_variable):
         pass
+
+    def print_solution(self):
+        pass

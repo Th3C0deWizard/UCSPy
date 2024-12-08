@@ -9,6 +9,7 @@ from professor import Professor
 from session import Session
 from timerange import DaysOfWeek, TimeRange, time_range_overlap
 from datetime import time
+from course import Course
 import random
 import copy
 
@@ -23,6 +24,7 @@ class UCSP(CSP):
         classrooms: List[ClassRoom],
         professors: List[Professor],
         classrooms_types: List[str],
+        courses: List[Course],
     ):
         super().__init__(variables)
         self.domains = {}  # Not used
@@ -33,45 +35,49 @@ class UCSP(CSP):
         self.classrooms = classrooms
         self.professors = professors  # Not used
         self.classrooms_types = classrooms_types  # Not used
+        self.courses = courses
 
     def assign_random_value(self, variable: Session):
         """
         Assigns a random value to a variable.
         """
+        if variable.course.fixed:
+            return
+
         possible = False
 
-        for professor in variable.course.potential_professors:
-            variable.professor = professor
-            variable.day = random.choice(list(variable.professor.schedule.keys()))
-            schedule = variable.professor.available_schedule.get(variable.day, None)
-            duration = variable.duration
-            for sch in schedule:
-                time_sch = copy.deepcopy(sch)
-                if time_sch.start.minute > 0 and time_sch.start.minute < 30:
-                    time_sch.start = time_sch.start.replace(minute=30)
-                elif time_sch.start.minute > 30:
-                    time_sch.start = time_sch.start.replace(
-                        hour=time_sch.start.hour + 1, minute=0
-                    )
+        # for professor in variable.course.potential_professors:
+        #     variable.professor = professor
+        #     variable.day = random.choice(list(variable.professor.schedule.keys()))
+        #     schedule = variable.professor.available_schedule.get(variable.day, None)
+        #     duration = variable.duration
+        #     for sch in schedule:
+        #         time_sch = copy.deepcopy(sch)
+        #         if time_sch.start.minute > 0 and time_sch.start.minute < 30:
+        #             time_sch.start = time_sch.start.replace(minute=30)
+        #         elif time_sch.start.minute > 30:
+        #             time_sch.start = time_sch.start.replace(
+        #                 hour=time_sch.start.hour + 1, minute=0
+        #             )
 
-                if time_sch.get_duration() >= duration:
-                    variable.time_range = TimeRange(
-                        time_sch.start,
-                        time_sch.start.replace(hour=time_sch.start.hour + duration),
-                    )
-                    new_range = TimeRange(variable.time_range.start, time_sch.end)
-                    if new_range.get_duration() > 0:
-                        schedule.insert(schedule.index(sch), new_range)
-                    schedule.remove(sch)
-                    break
+        #         if time_sch.get_duration() >= duration:
+        #             variable.time_range = TimeRange(
+        #                 time_sch.start,
+        #                 time_sch.start.replace(hour=time_sch.start.hour + duration),
+        #             )
+        #             new_range = TimeRange(variable.time_range.start, time_sch.end)
+        #             if new_range.get_duration() > 0:
+        #                 schedule.insert(schedule.index(sch), new_range)
+        #             schedule.remove(sch)
+        #             break
 
-            if variable.time_range is not None:
-                possible = True
-                break
+        #     if variable.time_range is not None:
+        #         possible = True
+        #         break
 
         if not possible:
             variable.professor = random.choice(variable.course.potential_professors)
-            variable.day = random.choice(variable.professor.schedule.keys())
+            variable.day = random.choice(list(variable.professor.schedule.keys()))
             study_time = random.choice(self.study_times)
             start = random.choice(
                 range(study_time.start.hour, study_time.end.hour - variable.duration)
@@ -91,6 +97,8 @@ class UCSP(CSP):
     def is_solved(self) -> Tuple[dict[Any, int], bool]:
         constraints = {}
         for variable in self.variables:
+            if variable.course.fixed:
+                continue
             constraints[variable] = self.check_constraints(variable)
         return constraints, all([c == 0 for c in constraints.values()])
 
@@ -157,13 +165,37 @@ class UCSP(CSP):
             la sub-variable día es igual, entonces se debe cumplir que el rango entre la hora de inicio y la de fin, de cada sesión, 
             no se puede cruzar.
             """
+
             if (
                 v.course.subject != variable.course.subject
                 and v.course.semester == variable.course.semester
                 and v.day == variable.day
                 and time_range_overlap(v.time_range, variable.time_range)
             ):
-                constraints += 1
+                courses_subject = [
+                    course
+                    for course in self.courses
+                    if course.subject == v.course.subject and course != v.course
+                ]
+
+                if len(courses_subject) > 0:
+                    overlap = True
+                    for course in courses_subject:
+                        course_overlap = False
+                        for session in course.sessions:
+                            if session.day == variable.day:
+                                if time_range_overlap(
+                                    session.time_range, variable.time_range
+                                ):
+                                    course_overlap = True
+                                    break
+                        if not course_overlap:
+                            overlap = False
+                            break
+                    if overlap:
+                        constraints += 1
+                else:
+                    constraints += 1
 
             """
             Si para las asignaciones de dos sesiones de cursos sobre diferentes asignaturas que no se pueden cruzar de acuerdo a la 
@@ -255,3 +287,8 @@ class UCSP(CSP):
         variable.time_range = new_variable.time_range
         variable.professor = new_variable.professor
         variable.classroom = new_variable.classroom
+
+    def print_solution(self):
+        for course in self.courses:
+            print(course)
+            print("--------------------------------------------------")

@@ -25,7 +25,7 @@ class Session:
         self.course = course
 
     def __str__(self):
-        return f"{self.course.name} with {self.course.quotas} quotas at {self.day} in {self.time_range} with {self.professor} in {self.classroom} - Real type {self.classroom_type}"
+        return f"{self.day} from {self.time_range} in {self.classroom}"
 
     def __repr__(self) -> str:
         return self.__str__()

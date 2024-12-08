@@ -15,6 +15,7 @@ class Course:
         sessions: List["Session"] | None = None,
         study_time: TimeRange | None = None,  # jornada academica
         no_overlap_courses: List["Course"] = None,
+        fixed: bool = False,
     ):
         self.name = name
         self.potential_professors = potential_professors
@@ -24,9 +25,14 @@ class Course:
         self.study_time = study_time
         self.sessions = sessions
         self.no_overlap_courses = no_overlap_courses
+        self.fixed = fixed
 
     def __str__(self):
-        return f"{self.name} with {self.potential_professors}"
+        message = f"\n{self.name}\t| {self.quotas} quotas\t| {self.semester} semester\nProfessor: {self.sessions[0].professor.name}\n"
+        for i, session in enumerate(self.sessions):
+            message += f"Session {i + 1}: {session}\n"
+
+        return message
 
     def __repr__(self) -> str:
         return self.__str__()

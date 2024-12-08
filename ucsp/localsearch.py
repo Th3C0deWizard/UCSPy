@@ -11,11 +11,7 @@ class LocalSearch(CSPSolver):
         self.assign_all_random()
 
         print("Initial state")
-        for var in self.csp.variables:
-            print(var)
-            print(
-                "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
-            )
+        self.csp.print_solution()
 
         i = 0
         while True:
@@ -24,23 +20,22 @@ class LocalSearch(CSPSolver):
                 break
             variable = max(num_constraints, key=num_constraints.get)
             print(
-                "Variable with most constraints: ",
+                "Session with most constraints:\n",
+                variable.course.name,
+                ": ",
                 variable,
-                " with ",
+                "\n Number of constraints: ",
                 num_constraints[variable],
-                " constraints",
+                "\n",
             )
             new_variable = self.csp.select_value_with_fewest_constraints(variable)
             self.csp.equals_variable(variable, new_variable)
             i += 1
 
+        print("--------------------------------------------------")
         print("\nFinal State")
-        print("Number of iterations: ", i)
-        for var in self.csp.variables:
-            print(var)
-            print(
-                "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n"
-            )
+        print("Number of iterations: ", i, "\n")
+        self.csp.print_solution()
 
     def assign_all_random(self):
         for variable in self.csp.variables:

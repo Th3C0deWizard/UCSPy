@@ -6,7 +6,7 @@
         "Monday": [
           {
             "start": 8,
-            "end": 10
+            "end": 12
           },
           {
             "start": 14,
@@ -140,6 +140,30 @@
         {
           "classroom_type": "Basic",
           "duration": 2
+        }
+      ],
+      "study_time": 0
+    }
+  ],
+  "fixed_courses": [
+    {
+      "name": "Base de Datos G1",
+      "professor": "Dairon Rua",
+      "semester": 1,
+      "subject": "Base de Datos",
+      "quotas": 10,
+      "sessions": [
+        {
+          "classroom": "F-405",
+          "duration": 2,
+          "day": "Monday",
+          "start": 8
+        },
+        {
+          "classroom": "F-405",
+          "duration": 2,
+          "day": "Wednesday",
+          "start": 10
         }
       ],
       "study_time": 0

@@ -38,6 +38,13 @@ class TimeRange:
 
 
 def time_range_overlap(time_range1: TimeRange, time_range2: TimeRange):
-    return time_range1.is_time_between(
-        time_range2.start
-    ) or time_range1.is_time_between(time_range2.end)
+    return (
+        time_range1.is_time_between(time_range2.start)
+        or time_range1.is_time_between(time_range2.end)
+        or time_range2.is_time_between(time_range1.start)
+        or time_range2.is_time_between(time_range1.end)
+        or (
+            time_range1.start == time_range2.start
+            and time_range1.end == time_range2.end
+        )
+    )
