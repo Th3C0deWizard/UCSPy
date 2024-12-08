@@ -55,6 +55,8 @@ def main():
     # Courses and Sessions
     courses_list = []
     sessions_list = []
+
+    # Courses to be assigned
     for course in data["courses"]:
         obj_course = Course(
             name=course["name"],
@@ -80,6 +82,53 @@ def main():
         obj_course.sessions = course_sessions
         courses_list.append(obj_course)
 
+    # Fixed courses
+    for fixed_course in data["fixed_courses"]:
+        obj_course = Course(
+            name=fixed_course["name"],
+            potential_professors=[],
+            semester=fixed_course["semester"],
+            subject=fixed_course["subject"],
+            quotas=fixed_course["quotas"],
+            study_time=study_times[fixed_course["study_time"]],
+            fixed=True,
+        )
+
+        course_sessions = []
+        for session in fixed_course["sessions"]:
+            classroom = next(
+                (
+                    classroom
+                    for classroom in classrooms_list
+                    if classroom.name == session["classroom"]
+                ),
+                None,
+            )
+            professor = next(
+                (
+                    professor
+                    for professor in professors_list
+                    if professor.name == fixed_course["professor"]
+                ),
+                None,
+            )
+            session_obj = Session(
+                classroom_type=classroom.classroom_type,
+                duration=session["duration"],
+                day=session["day"],
+                professor=professor,
+                classroom=classroom,
+                course=obj_course,
+            )
+            session_obj.set_time_range(
+                time(int(session["start"])),
+                time(int(session["start"]) + session["duration"]),
+            )
+            sessions_list.append(session_obj)
+            course_sessions.append(session_obj)
+        obj_course.sessions = course_sessions
+        courses_list.append(obj_course)
+
     ucsp = UCSP(
         variables=sessions_list,
         study_times=study_times,
@@ -87,6 +136,7 @@ def main():
         classrooms=classrooms_list,
         professors=professors_list,
         classrooms_types=classrooms_types,
+        courses=courses_list,
     )
 
     local_search = LocalSearch(ucsp)
