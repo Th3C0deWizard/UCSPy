@@ -1,0 +1,401 @@
+{
+  "courses": [
+    {
+      "name": "metodos numericos 109057 - METODOS NUMERICOS 1 - METODOS NUMERICOS ING DE SISTEMAS",
+      "semester": 1,
+      "subject": "metodos numericos",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "ecuaciones diferenciales 104033 - ECUACIONES DIFERENCIALES 1 - FACULTAD DE INGENIERIA",
+      "semester": 1,
+      "subject": "ecuaciones diferenciales",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "ecuaciones diferenciales 104033 - ECUACIONES DIFERENCIALES 2 - FACULTAD DE INGENIERIA",
+      "semester": 1,
+      "subject": "ecuaciones diferenciales",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "ecuaciones diferenciales 104033 - ECUACIONES DIFERENCIALES 3 - FACULTAD DE INGENIERIA JORNADA EXTENDIDA",
+      "semester": 1,
+      "subject": "ecuaciones diferenciales",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "paradigmas de lenguajes 109182 - PARADIGMAS DE LENGUAJES 1 - PARADIGMAS DE LENGUAJES ING. SISTEMAS - DIA",
+      "semester": 1,
+      "subject": "paradigmas de lenguajes",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "paradigmas de lenguajes 109182 - PARADIGMAS DE LENGUAJES 2 - PARADIGMAS DE LENGUAJES ING. SISTEMAS - NOCHE",
+      "semester": 1,
+      "subject": "paradigmas de lenguajes",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "programacion back end 109183 - PROGRAMACION BACK END 1 - PROGRAMACION BACKEND ING. DE SISTEMAS",
+      "semester": 1,
+      "subject": "programacion back end",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "redes lan 103126 - REDES LAN 1 - REDES LAN ING. DE SISTEMAS",
+      "semester": 1,
+      "subject": "redes lan",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "ingenieria del software II 103093 - INGENIERIA DEL SOFTWARE II 1 - ING. DE SOFTWARE LL",
+      "semester": 1,
+      "subject": "ingenieria del software II",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "electricidad y magnetismo 109179 - ELECTRICIDAD Y MAGNETISMO 1A - ING. DE SISTEMAS - ING. MECANICA - ING. INDUSTRIAL DIA",
+      "semester": 2,
+      "subject": "electricidad y magnetismo",
+      "sessions": [
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" }
+      ]
+    },
+    {
+      "name": "electricidad y magnetismo 109179 - ELECTRICIDAD Y MAGNETISMO 1B - ING. DE SISTEMAS - ING. MECANICA - ING. INDUSTRIAL DIA",
+      "semester": 2,
+      "subject": "electricidad y magnetismo",
+      "sessions": [
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" }
+      ]
+    },
+    {
+      "name": "electricidad y magnetismo 109179 - ELECTRICIDAD Y MAGNETISMO 3 - ING. DE SISTEMAS - ING. INDUSTRIAL EXTENDIDA",
+      "semester": 2,
+      "subject": "electricidad y magnetismo",
+      "sessions": [
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" }
+      ]
+    },
+    {
+      "name": "estadistica y probabilidad 104036 - ESTADISTICA Y PROBABILIDAD 1 - FACULTAD DE INGENIERIA",
+      "semester": 2,
+      "subject": "estadistica y probabilidad",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "estadistica y probabilidad 104036 - ESTADISTICA Y PROBABILIDAD 2 - FACULTAD DE INGENIERIA JORNADA EXTENDIDA",
+      "semester": 2,
+      "subject": "estadistica y probabilidad",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "calculo vectorial 104032 - CALCULO VECTORIAL 1 - FACULTAD DE INGENIERIA",
+      "semester": 2,
+      "subject": "calculo vectorial",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "calculo vectorial 104032 - CALCULO VECTORIAL 2 - FACULTAD DE INGENIERIA",
+      "semester": 2,
+      "subject": "calculo vectorial",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "calculo vectorial 104032 - CALCULO VECTORIAL 3 - FACULTAD DE INGENIERIA JORNADA EXTENDIDA",
+      "semester": 2,
+      "subject": "calculo vectorial",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "bases de datos I 109180 - BASES DE DATOS I 1 - BASES DE DATOS L ING. DE SISTEMAS",
+      "semester": 2,
+      "subject": "bases de datos I",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "sistemas operativos (tecnologia II) 103027 - SISTEMAS OPERATIVOS (TECNOLOGIA II) 1 - SISTEMAS OPERATIVOS ING. DE SISTEMAS",
+      "semester": 2,
+      "subject": "sistemas operativos (tecnologia II)",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "ingenieria de software I 103022 - INGENIERIA DE SOFTWARE I 1 - INGENIERIA  DE SOFTWARE I - ING. DE SISTEMAS",
+      "semester": 2,
+      "subject": "ingenieria de software I",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "fisica mecanica 109178 - FISICA MECANICA 1A - INGENIERIAS DIA (GRUPO 1A)",
+      "semester": 3,
+      "subject": "fisica mecanica",
+      "sessions": [
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" }
+      ]
+    },
+    {
+      "name": "fisica mecanica 109178 - FISICA MECANICA 1B - INGENIERIAS DIA (GRUPO 1B)",
+      "semester": 3,
+      "subject": "fisica mecanica",
+      "sessions": [
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" }
+      ]
+    },
+    {
+      "name": "fisica mecanica 109178 - FISICA MECANICA 2 - INGENIERIAS DIA (GRUPO 2)",
+      "semester": 3,
+      "subject": "fisica mecanica",
+      "sessions": [
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" },
+        { "duration": "2:00:00" }
+      ]
+    },
+    {
+      "name": "calculo integral 104031 - CALCULO INTEGRAL 1 - FACULTAD DE INGENIERIA",
+      "semester": 3,
+      "subject": "calculo integral",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "calculo integral 104031 - CALCULO INTEGRAL 2 - FACULTAD DE INGENIERIA",
+      "semester": 3,
+      "subject": "calculo integral",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "calculo integral 104031 - CALCULO INTEGRAL 3 - FACULTAD DE INGENIERIA JORNADA EXTENDIDA",
+      "semester": 3,
+      "subject": "calculo integral",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "calculo integral 104031 - CALCULO INTEGRAL 4 - ADMINISTRACION-ECONOMIA-NEGOCIOS",
+      "semester": 3,
+      "subject": "calculo integral",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "calculo integral 104081 - CALCULO INTEGRAL 60 - TECNOLOGIAS FACULTAD DE INGENIERIA",
+      "semester": 3,
+      "subject": "calculo integral",
+      "sessions": [{ "duration": "5:00:00" }]
+    },
+    {
+      "name": "calculo integral 165080 - CALCULO INTEGRAL 70 - GRUPO DEPTO ESTUDIOS A DISTANCIA",
+      "semester": 3,
+      "subject": "calculo integral",
+      "sessions": [{ "duration": -1 }]
+    },
+    {
+      "name": "calculo integral 104081 - CALCULO INTEGRAL 75 - GRUPO DEPTO ESTUDIOS A DISTANCIA",
+      "semester": 3,
+      "subject": "calculo integral",
+      "sessions": [{ "duration": -1 }]
+    },
+    {
+      "name": "matematicas discretas 104027 - MATEMATICAS DISCRETAS 1 - MATEMATICAS DISCRETAS ING. DE SISTEMAS",
+      "semester": 3,
+      "subject": "matematicas discretas",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "matematicas discretas 104085 - MATEMATICAS DISCRETAS 67 - TAPSI",
+      "semester": 3,
+      "subject": "matematicas discretas",
+      "sessions": [{ "duration": "4:00:00" }]
+    },
+    {
+      "name": "matematicas discretas 104085 - MATEMATICAS DISCRETAS 68 - TAPSI",
+      "semester": 3,
+      "subject": "matematicas discretas",
+      "sessions": [{ "duration": -1 }]
+    },
+    {
+      "name": "estructura de datos 103011 - ESTRUCTURA DE DATOS 1 - ESTRUCTURAS DE DATOS ING. SISTEMAS",
+      "semester": 3,
+      "subject": "estructura de datos",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "estructura de datos 103011 - ESTRUCTURA DE DATOS 2 - ESTRUCTURA DE DATOS ING. BIO. - TECNICAS DE PROGRAMACION ING. ELEC.",
+      "semester": 3,
+      "subject": "estructura de datos",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "estructura de datos 103011 - ESTRUCTURA DE DATOS 3 - ESTRUCTURA DE DATOS ING. BIO. - TECNICAS DE PROGRAMACION ING. ELEC. (EXT)",
+      "semester": 3,
+      "subject": "estructura de datos",
+      "sessions": [{ "duration": "3:00:00" }]
+    },
+    {
+      "name": "estructura de datos 103153 - ESTRUCTURA DE DATOS 60 - TAI",
+      "semester": 3,
+      "subject": "estructura de datos",
+      "sessions": [{ "duration": "4:00:00" }]
+    },
+    {
+      "name": "estructura de datos 103145 - ESTRUCTURA DE DATOS 67 - TAPSI",
+      "semester": 3,
+      "subject": "estructura de datos",
+      "sessions": [{ "duration": "4:00:00" }]
+    },
+    {
+      "name": "programacion orientada a objetos 103018 - PROGRAMACION ORIENTADA A OBJETOS 1 - PROGRAMACION ORIENTADA A OBJETOS",
+      "semester": 3,
+      "subject": "programacion orientada a objetos",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "programacion orientada a objetos 103144 - PROGRAMACION ORIENTADA A OBJETOS 67 - TAPSI",
+      "semester": 3,
+      "subject": "programacion orientada a objetos",
+      "sessions": [{ "duration": "4:00:00" }]
+    },
+    {
+      "name": "ingles III 151603 - INGLES III 1 - FISIOTERAPIA INGLES III",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "ingles III 151612 - INGLES III 1 - VALIDACION DE INGLES III - AGOSTO 28",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": -1 }]
+    },
+    {
+      "name": "ingles III 151603 - INGLES III 2 - FISIOTERAPIA INGLES III",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "ingles III 151612 - INGLES III 2 - VALIDACION DE INGLES III - SEPTIEMBRE 23",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": -1 }]
+    },
+    {
+      "name": "ingles III 151603 - INGLES III 3 - ODONTOLOGIA INGLES III",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "ingles III 151612 - INGLES III 3 - VALIDACION DE INGLES III - OCTUBRE 16",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": -1 }]
+    },
+    {
+      "name": "ingles III 151603 - INGLES III 5 - ESTUDIOS SOCIALES Y EMPRESARIALES INGLES III",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "ingles III 151603 - INGLES III 6 - ESTUDIOS SOCIALES Y EMPRESARIALES INGLES III",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": -1 }]
+    },
+    {
+      "name": "ingles III 151703 - INGLES III 60 - TECNOLOGIAS FACULTAD DE INGENIERIA",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": "4:00:00" }]
+    },
+    {
+      "name": "ingles III 151603 - INGLES III 7 - ODONTOLOGIA E INGENIERIAS INGLES III",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": "4:00:00" }]
+    },
+    {
+      "name": "ingles III 161023 - INGLES III 70 - GRUPO DEPTO ESTUDIOS A DISTANCIA",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": -1 }]
+    },
+    {
+      "name": "ingles III 151603 - INGLES III 75 - GRUPO DEPTO ESTUDIOS A DISTANCIA",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": -1 }]
+    },
+    {
+      "name": "ingles III 151703 - INGLES III 75 - GRUPO DEPTO ESTUDIOS A DISTANCIA",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": -1 }]
+    },
+    {
+      "name": "ingles III 151603 - INGLES III 8 - APH INGLES III",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    },
+    {
+      "name": "ingles III 151603 - INGLES III 9 - INGENIERIAS INGLES III",
+      "semester": 3,
+      "subject": "ingles III",
+      "sessions": [{ "duration": "2:00:00" }, { "duration": "2:00:00" }]
+    }
+  ],
+  "classrooms": [
+    { "name": "INFORMATICA F - 409" },
+    { "name": "AULA F - 106" },
+    { "name": "AULA F-212" },
+    { "name": "AULA F-314 (Hibrido)" },
+    { "name": "AULA F - 207" },
+    { "name": "BLOQUE 16 - 104" },
+    { "name": "AULA F- 210 (Silla u" },
+    { "name": "INFORMATICA F - 402" },
+    { "name": "INFORMATICA F - 404" },
+    { "name": "INFORMATICA F - 407" },
+    { "name": "AULA F - 204 (Hibrid" },
+    { "name": "AULA F - 306" },
+    { "name": "" },
+    { "name": "LABORATORIO FISICA 3" },
+    { "name": "BLOQUE 16 - 102" },
+    { "name": "BLOQUE 16 - 402" },
+    { "name": "AULA F - 208 (Hibrid" },
+    { "name": "BLOQUE 16 - 101" },
+    { "name": "AULA F - 303" },
+    { "name": "AULA F-310 (Silla un" },
+    { "name": "LABORATORIO FISICA 1" },
+    { "name": "19-202 (Casa Bavaria" },
+    { "name": "19-203 (Casa Bavaria" },
+    { "name": "AULA F - 304 (Hibrid" },
+    { "name": "AULA F - 203" },
+    { "name": "BLOQUE 16 - 401 (Sil" },
+    { "name": "AULA F - 305 (Hibrid" },
+    { "name": "AULA F-501" },
+    { "name": "AULA F - 206" },
+    { "name": "INFORMATICA F - 401" },
+    { "name": "BLOQUE 16 - 105" },
+    { "name": "INFORMATICA F - 405" },
+    { "name": "LABORATORIO ELECTRON" },
+    { "name": "19-204 (Casa Bavaria" },
+    { "name": "AULA F - 302" },
+    { "name": "19-104 (Casa Bavaria" },
+    { "name": "BLOQUE 16 - 106" },
+    { "name": "AULA F-504 (Hibrido)" },
+    { "name": "AULA F-503(Hibrido)" },
+    { "name": "AULA F - 307" }
+  ]
+}
+
