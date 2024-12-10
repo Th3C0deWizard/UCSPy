@@ -9,7 +9,7 @@ class LocalSearch(CSPSolver):
         super().__init__(csp)
         self.max_iterations = 100000
 
-    def solve(self):
+    def solve(self) -> bool:
         self.assign_all_random()
 
         print("Initial state")
@@ -36,9 +36,10 @@ class LocalSearch(CSPSolver):
                     num_ctr,
                     "\n",
                 )
-                new_variable, new_num_ctr = (
-                    self.csp.select_value_with_fewest_constraints(variable)
-                )
+                new_data = self.csp.select_value_with_fewest_constraints(variable)
+                if new_data is None:
+                    continue
+                new_variable, new_num_ctr = new_data
                 if new_num_ctr <= num_ctr:
                     does_not_improve = False
                     break
@@ -53,6 +54,7 @@ class LocalSearch(CSPSolver):
             i += 1
 
         if i == self.max_iterations:
+            return False
             print("Solution not found")
 
         print("--------------------------------------------------")
@@ -61,6 +63,7 @@ class LocalSearch(CSPSolver):
         for v, c in constraints:
             print(v.course.name, ": ", v, "\n Number of constraints: ", c, "\n")
         self.csp.print_solution()
+        return True
 
     def assign_all_random(self):
         for variable in self.csp.variables:

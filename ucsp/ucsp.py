@@ -293,7 +293,8 @@ class UCSP(CSP):
                 break
             prev = ctr
 
-        return min_session
+        # return min_session
+        return None if self.are_equal(min_session[0], variable) else min_session
 
     def equals_variable(self, variable: Session, new_variable: Session):
         variable.day = new_variable.day

@@ -13,6 +13,16 @@ from datetime import time
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("filename", help="Nombre del archivo con los datos", type=str)
+    parser.add_argument(
+        "-e",
+        "--executions",
+        help="Nombre del archivo con los datos",
+        type=str,
+        required=False,
+    )
+    parser.add_argument(
+        "-m", "--max", help="Nombre del archivo con los datos", type=str, required=False
+    )
     args = parser.parse_args()
     if args.filename is None:
         print("Debe ingresar un archivo")
@@ -142,7 +152,14 @@ def main():
     )
 
     local_search = LocalSearch(ucsp)
-    local_search.solve()
+    local_search.max_iterations = 100 if args.max is None else int(args.max)
+    num_solved = 0
+    total = 1000 if args.executions is None else int(args.executions)
+    for i in range(total):
+        if local_search.solve():
+            num_solved += 1
+
+    print(f"Se resolvieron {num_solved} veces de {total}")
 
 
 if __name__ == "__main__":
