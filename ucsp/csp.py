@@ -10,7 +10,7 @@ class CSP:
     def __init__(self, variables: List):
         self.variables = variables
 
-    def is_solved(self) -> Tuple[dict[Any, int], bool]:
+    def is_solved(self) -> Tuple[List[Tuple[Any, int]], bool]:
         pass
 
     def check_constraints(self, variable):

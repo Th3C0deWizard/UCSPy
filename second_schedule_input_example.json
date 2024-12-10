@@ -36,9 +36,235 @@
       "end": 22
     }
   ],
+  "professors": [
+    {
+      "name": "Julian",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 7,
+            "end": 12
+          },
+          {
+            "start": 19,
+            "end": 22
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 10,
+            "end": 12
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 10,
+            "end": 12
+          }
+        ],
+        "Friday": [
+          {
+            "start": 7,
+            "end": 12
+          },
+          {
+            "start": 19,
+            "end": 22
+          }
+        ]
+      }
+    },
+    {
+      "name": "Juan David",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 7,
+            "end": 12
+          },
+          {
+            "start": 17,
+            "end": 22
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 7,
+            "end": 12
+          },
+          {
+            "start": 17,
+            "end": 22
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 10,
+            "end": 12
+          }
+        ],
+        "Friday": [
+          {
+            "start": 7,
+            "end": 12
+          }
+        ]
+      }
+    },
+    {
+      "name": "Malva",
+      "schedule": {
+        "Wednesday": [
+          {
+            "start": 14,
+            "end": 18
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 14,
+            "end": 18
+          }
+        ],
+        "Friday": [
+          {
+            "start": 7,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 18
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jorge",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 7,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 18
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 7,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 18
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 14,
+            "end": 22
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lina",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 14,
+            "end": 18
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 14,
+            "end": 18
+          }
+        ],
+        "Friday": [
+          {
+            "start": 14,
+            "end": 18
+          }
+        ]
+      }
+    },
+    {
+      "name": "Helver",
+      "schedule": {
+        "Wednesday": [
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Friday": [
+          {
+            "start": 7,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mulcue",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 16,
+            "end": 22
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 14,
+            "end": 18
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 8,
+            "end": 10
+          },
+          {
+            "start": 14,
+            "end": 20
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 8,
+            "end": 10
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Friday": [
+          {
+            "start": 8,
+            "end": 10
+          },
+          {
+            "start": 14,
+            "end": 18
+          }
+        ]
+      }
+    }
+  ],
   "courses": [
     {
       "name": "METODOS NUMERICOS ING DE SISTEMAS",
+      "potential_professors": ["Julian", "Juan David"],
       "semester": 1,
       "subject": "metodos numericos",
       "quotas": 20,
@@ -50,6 +276,7 @@
     },
     {
       "name": "PARADIGMAS DE LENGUAJES 1 - PARADIGMAS DE LENGUAJES ING. SISTEMAS - DIA",
+      "potential_professors": ["Julian", "Malva"],
       "semester": 1,
       "subject": "paradigmas de lenguajes",
       "quotas": 20,
@@ -61,6 +288,7 @@
     },
     {
       "name": "PARADIGMAS DE LENGUAJES 2 - PARADIGMAS DE LENGUAJES ING. SISTEMAS - NOCHE",
+      "potential_professors": ["Julian", "Malva"],
       "semester": 1,
       "subject": "paradigmas de lenguajes",
       "quotas": 20,
@@ -72,6 +300,7 @@
     },
     {
       "name": "PROGRAMACION BACK END 1 - PROGRAMACION BACKEND ING. DE SISTEMAS",
+      "potential_professors": ["Jorge"],
       "semester": 1,
       "subject": "programacion back end",
       "quotas": 20,
@@ -83,6 +312,7 @@
     },
     {
       "name": "REDES LAN 1 - REDES LAN ING. DE SISTEMAS",
+      "potential_professors": ["Lina"],
       "semester": 1,
       "subject": "redes lan",
       "quotas": 25,
@@ -93,6 +323,7 @@
     },
     {
       "name": "INGENIERIA DEL SOFTWARE II 1 - ING. DE SOFTWARE LL",
+      "potential_professors": ["Malva", "Lina"],
       "semester": 1,
       "subject": "ingenieria del software II",
       "quotas": 25,
@@ -104,6 +335,7 @@
     },
     {
       "name": "ELECTRICIDAD Y MAGNETISMO 1A - ING. DE SISTEMAS - ING. MECANICA - ING. INDUSTRIAL DIA",
+      "potential_professors": ["Mulcue", "Helver"],
       "semester": 2,
       "subject": "electricidad y magnetismo",
       "quotas": 30,
@@ -116,6 +348,7 @@
     },
     {
       "name": "ELECTRICIDAD Y MAGNETISMO 1B - ING. DE SISTEMAS - ING. MECANICA - ING. INDUSTRIAL DIA",
+      "potential_professors": ["Mulcue", "Helver"],
       "semester": 2,
       "subject": "electricidad y magnetismo",
       "quotas": 30,
@@ -128,6 +361,7 @@
     },
     {
       "name": "ELECTRICIDAD Y MAGNETISMO 3 - ING. DE SISTEMAS - ING. INDUSTRIAL EXTENDIDA",
+      "potential_professors": ["Mulcue", "Helver"],
       "semester": 2,
       "subject": "electricidad y magnetismo",
       "quotas": 30,
@@ -140,6 +374,7 @@
     },
     {
       "name": "BASES DE DATOS I 1 - BASES DE DATOS L ING. DE SISTEMAS",
+      "potential_professors": ["Jorge", "Juan David", "Malva"],
       "semester": 2,
       "subject": "bases de datos I",
       "quotas": 20,
@@ -151,6 +386,7 @@
     },
     {
       "name": "SISTEMAS OPERATIVOS 1 - SISTEMAS OPERATIVOS ING. DE SISTEMAS",
+      "potential_professors": ["Jorge", "Lina"],
       "semester": 2,
       "subject": "sistemas operativos",
       "quotas": 25,
@@ -162,6 +398,7 @@
     },
     {
       "name": "INGENIERIA DE SOFTWARE I 1 - INGENIERIA  DE SOFTWARE I - ING. DE SISTEMAS",
+      "potential_professors": ["Malva", "Lina"],
       "semester": 2,
       "subject": "ingenieria de software I",
       "quotas": 25,
@@ -175,37 +412,91 @@
   "fixed_courses": [
     {
       "name": "ECUACIONES DIFERENCIALES 1 - FACULTAD DE INGENIERIA",
+      "professor": "Helver",
       "semester": 1,
       "subject": "ecuaciones diferenciales",
       "quotas": 25,
+      "study_time": 0,
       "sessions": [
-        { "classroom_type": "Normal", "duration": 2 },
-        { "classroom_type": "Normal", "duration": 2 }
+        {
+          "classroom": "AULA F-212",
+          "duration": 2,
+          "day": "Wednesday",
+          "start": 14
+        },
+        {
+          "classroom": "AULA F-212",
+          "duration": 2,
+          "day": "Friday",
+          "start": 14
+        }
       ]
     },
     {
       "name": "ECUACIONES DIFERENCIALES 2 - FACULTAD DE INGENIERIA",
+      "professor": "Helver",
       "semester": 1,
       "subject": "ecuaciones diferenciales",
       "quotas": 25,
+      "study_time": 0,
       "sessions": [
-        { "classroom_type": "Normal", "duration": 2 },
-        { "classroom_type": "Normal", "duration": 2 }
+        {
+          "classroom": "AULA F - 207",
+          "duration": 2,
+          "day": "Wednesday",
+          "start": 14
+        },
+        {
+          "classroom": "AULA F - 207",
+          "duration": 2,
+          "day": "Friday",
+          "start": 14
+        }
       ]
     },
     {
       "name": "estadistica y probabilidad 104036 - ESTADISTICA Y PROBABILIDAD 1 - FACULTAD DE INGENIERIA",
+      "professor": "Juan David",
       "semester": 2,
       "subject": "estadistica y probabilidad",
       "quotas": 30,
-      "sessions": [{ "duration": 2 }, { "duration": 2 }]
+      "study_time": 0,
+      "sessions": [
+        {
+          "classroom": "BLOQUE 16 - 102",
+          "duration": 2,
+          "day": "Friday",
+          "start": 10
+        },
+        {
+          "classroom": "BLOQUE 16 - 402",
+          "duration": 2,
+          "day": "Wednesday",
+          "start": 10
+        }
+      ]
     },
     {
       "name": "estadistica y probabilidad 104036 - ESTADISTICA Y PROBABILIDAD 2 - FACULTAD DE INGENIERIA JORNADA EXTENDIDA",
+      "professor": "Juan David",
       "semester": 2,
       "subject": "estadistica y probabilidad",
       "quotas": 30,
-      "sessions": [{ "duration": 2 }, { "duration": 2 }]
+      "study_time": 1,
+      "sessions": [
+        {
+          "classroom": "AULA F- 210",
+          "duration": 2,
+          "day": "Tuesday",
+          "start": 18
+        },
+        {
+          "classroom": "AULA F- 210",
+          "duration": 2,
+          "day": "Monday",
+          "start": 20
+        }
+      ]
     }
   ]
 }

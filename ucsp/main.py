@@ -25,7 +25,7 @@ def main():
 
     # Professors
     professors_list = []
-    for professor in data["proffesors"]:
+    for professor in data["professors"]:
         schedule_dict = {}
         for key, value in professor["schedule"].items():
             schedule_dict[key] = [
@@ -58,6 +58,7 @@ def main():
 
     # Courses to be assigned
     for course in data["courses"]:
+        study_time = course.get("study_time", None)
         obj_course = Course(
             name=course["name"],
             potential_professors=[
@@ -67,7 +68,7 @@ def main():
             semester=course["semester"],
             subject=course["subject"],
             quotas=course["quotas"],
-            study_time=study_times[course["study_time"]],
+            study_time=study_times[study_time] if study_time is not None else None,
         )
 
         course_sessions = []
@@ -84,13 +85,14 @@ def main():
 
     # Fixed courses
     for fixed_course in data["fixed_courses"]:
+        study_time = fixed_course.get("study_time", None)
         obj_course = Course(
             name=fixed_course["name"],
             potential_professors=[],
             semester=fixed_course["semester"],
             subject=fixed_course["subject"],
             quotas=fixed_course["quotas"],
-            study_time=study_times[fixed_course["study_time"]],
+            study_time=study_times[study_time] if study_time is not None else None,
             fixed=True,
         )
 

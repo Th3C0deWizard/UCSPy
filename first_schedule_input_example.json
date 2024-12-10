@@ -1,0 +1,664 @@
+{
+  "classrooms_types": ["Informatics", "Laboratory", "Normal"],
+  "classrooms": [
+    { "name": "INFORMATICA F - 409", "capacity": 25, "type": "Informatics" },
+    { "name": "AULA F - 106", "capacity": 30, "type": "Normal" },
+    { "name": "AULA F-212", "capacity": 30, "type": "Normal" },
+    { "name": "AULA F-314 (Hibrido)", "capacity": 25, "type": "Normal" },
+    { "name": "AULA F - 207", "capacity": 25, "type": "Normal" },
+    { "name": "BLOQUE 16 - 104", "capacity": 20, "type": "Normal" },
+    { "name": "AULA F- 210", "capacity": 25, "type": "Normal" },
+    { "name": "INFORMATICA F - 402", "capacity": 20, "type": "Informatics" },
+    { "name": "INFORMATICA F - 404", "capacity": 20, "type": "Informatics" },
+    { "name": "INFORMATICA F - 407", "capacity": 20, "type": "Informatics" },
+    { "name": "AULA F - 204", "capacity": 25, "type": "Normal" },
+    { "name": "AULA F - 306", "capacity": 30, "type": "Normal" },
+    { "name": "LABORATORIO FISICA 3", "capacity": 25, "type": "Laboratory" },
+    { "name": "BLOQUE 16 - 102", "capacity": 25, "type": "Normal" },
+    { "name": "BLOQUE 16 - 402", "capacity": 25, "type": "Normal" },
+    { "name": "AULA F - 208", "capacity": 30, "type": "Normal" },
+    { "name": "BLOQUE 16 - 101", "capacity": 20, "type": "Normal" },
+    { "name": "LABORATORIO FISICA 1", "capacity": 30, "type": "Laboratory" },
+    { "name": "19-202", "capacity": 30, "type": "Normal" },
+    { "name": "19-203", "capacity": 30, "type": "Normal" },
+    { "name": "INFORMATICA F - 401", "capacity": 30, "type": "Informatics" },
+    { "name": "INFORMATICA F - 405", "capacity": 30, "type": "Informatics" },
+    { "name": "LABORATORIO ELECTRON", "capacity": 30, "type": "Laboratory" }
+  ],
+  "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "study_times": [
+    {
+      "start": 7,
+      "end": 18
+    },
+    {
+      "start": 18,
+      "end": 22
+    }
+  ],
+  "professors": [
+    {
+      "name": "Julian",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Friday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ]
+      }
+    },
+    {
+      "name": "Juan David",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Friday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ]
+      }
+    },
+    {
+      "name": "Malva",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Friday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jorge",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Friday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lina",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Friday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ]
+      }
+    },
+    {
+      "name": "Helver",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Friday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mulcue",
+      "schedule": {
+        "Monday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Tuesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Wednesday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Thursday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ],
+        "Friday": [
+          {
+            "start": 8,
+            "end": 12
+          },
+          {
+            "start": 14,
+            "end": 22
+          }
+        ]
+      }
+    }
+  ],
+  "courses": [
+    {
+      "name": "METODOS NUMERICOS ING DE SISTEMAS",
+      "potential_professors": ["Julian", "Juan David"],
+      "semester": 1,
+      "subject": "metodos numericos",
+      "quotas": 20,
+      "study_time": 0,
+      "sessions": [
+        { "classroom_type": "Informatics", "duration": 2 },
+        { "classroom_type": "Informatics", "duration": 2 }
+      ]
+    },
+    {
+      "name": "PARADIGMAS DE LENGUAJES 1 - PARADIGMAS DE LENGUAJES ING. SISTEMAS - DIA",
+      "potential_professors": ["Julian", "Malva"],
+      "semester": 1,
+      "subject": "paradigmas de lenguajes",
+      "quotas": 20,
+      "study_time": 0,
+      "sessions": [
+        { "classroom_type": "Informatics", "duration": 2 },
+        { "classroom_type": "Informatics", "duration": 2 }
+      ]
+    },
+    {
+      "name": "PARADIGMAS DE LENGUAJES 2 - PARADIGMAS DE LENGUAJES ING. SISTEMAS - NOCHE",
+      "potential_professors": ["Julian", "Malva"],
+      "semester": 1,
+      "subject": "paradigmas de lenguajes",
+      "quotas": 20,
+      "study_time": 1,
+      "sessions": [
+        { "classroom_type": "Informatics", "duration": 2 },
+        { "classroom_type": "Informatics", "duration": 2 }
+      ]
+    },
+    {
+      "name": "PROGRAMACION BACK END 1 - PROGRAMACION BACKEND ING. DE SISTEMAS",
+      "potential_professors": ["Jorge"],
+      "semester": 1,
+      "subject": "programacion back end",
+      "quotas": 20,
+      "study_time": 0,
+      "sessions": [
+        { "classroom_type": "Informatics", "duration": 2 },
+        { "classroom_type": "Informatics", "duration": 2 }
+      ]
+    },
+    {
+      "name": "REDES LAN 1 - REDES LAN ING. DE SISTEMAS",
+      "potential_professors": ["Lina"],
+      "semester": 1,
+      "subject": "redes lan",
+      "quotas": 25,
+      "sessions": [
+        { "classroom_type": "Informatics", "duration": 2 },
+        { "classroom_type": "Informatics", "duration": 2 }
+      ]
+    },
+    {
+      "name": "INGENIERIA DEL SOFTWARE II 1 - ING. DE SOFTWARE LL",
+      "potential_professors": ["Malva", "Lina"],
+      "semester": 1,
+      "subject": "ingenieria del software II",
+      "quotas": 25,
+      "study_time": 0,
+      "sessions": [
+        { "classroom_type": "Informatics", "duration": 2 },
+        { "classroom_type": "Informatics", "duration": 2 }
+      ]
+    },
+    {
+      "name": "ELECTRICIDAD Y MAGNETISMO 1A - ING. DE SISTEMAS - ING. MECANICA - ING. INDUSTRIAL DIA",
+      "potential_professors": ["Mulcue", "Helver"],
+      "semester": 2,
+      "subject": "electricidad y magnetismo",
+      "quotas": 30,
+      "study_time": 0,
+      "sessions": [
+        { "classroom_type": "Normal", "duration": 2 },
+        { "classroom_type": "Normal", "duration": 2 },
+        { "classroom_type": "Laboratory", "duration": 2 }
+      ]
+    },
+    {
+      "name": "ELECTRICIDAD Y MAGNETISMO 1B - ING. DE SISTEMAS - ING. MECANICA - ING. INDUSTRIAL DIA",
+      "potential_professors": ["Mulcue", "Helver"],
+      "semester": 2,
+      "subject": "electricidad y magnetismo",
+      "quotas": 30,
+      "study_time": 0,
+      "sessions": [
+        { "classroom_type": "Normal", "duration": 2 },
+        { "classroom_type": "Normal", "duration": 2 },
+        { "classroom_type": "Laboratory", "duration": 2 }
+      ]
+    },
+    {
+      "name": "ELECTRICIDAD Y MAGNETISMO 3 - ING. DE SISTEMAS - ING. INDUSTRIAL EXTENDIDA",
+      "potential_professors": ["Mulcue", "Helver"],
+      "semester": 2,
+      "subject": "electricidad y magnetismo",
+      "quotas": 30,
+      "study_time": 1,
+      "sessions": [
+        { "classroom_type": "Normal", "duration": 2 },
+        { "classroom_type": "Normal", "duration": 2 },
+        { "classroom_type": "Laboratory", "duration": 2 }
+      ]
+    },
+    {
+      "name": "BASES DE DATOS I 1 - BASES DE DATOS L ING. DE SISTEMAS",
+      "potential_professors": ["Jorge", "Juan David", "Malva"],
+      "semester": 2,
+      "subject": "bases de datos I",
+      "quotas": 20,
+      "study_time": 0,
+      "sessions": [
+        { "classroom_type": "Informatics", "duration": 2 },
+        { "classroom_type": "Informatics", "duration": 2 }
+      ]
+    },
+    {
+      "name": "SISTEMAS OPERATIVOS 1 - SISTEMAS OPERATIVOS ING. DE SISTEMAS",
+      "potential_professors": ["Jorge", "Lina"],
+      "semester": 2,
+      "subject": "sistemas operativos",
+      "quotas": 25,
+      "study_time": 0,
+      "sessions": [
+        { "classroom_type": "Informatics", "duration": 2 },
+        { "classroom_type": "Informatics", "duration": 2 }
+      ]
+    },
+    {
+      "name": "INGENIERIA DE SOFTWARE I 1 - INGENIERIA  DE SOFTWARE I - ING. DE SISTEMAS",
+      "potential_professors": ["Malva", "Lina"],
+      "semester": 2,
+      "subject": "ingenieria de software I",
+      "quotas": 25,
+      "study_time": 0,
+      "sessions": [
+        { "classroom_type": "Informatics", "duration": 2 },
+        { "classroom_type": "Informatics", "duration": 2 }
+      ]
+    }
+  ],
+  "fixed_courses": [
+    {
+      "name": "ECUACIONES DIFERENCIALES 1 - FACULTAD DE INGENIERIA",
+      "professor": "Helver",
+      "semester": 1,
+      "subject": "ecuaciones diferenciales",
+      "quotas": 25,
+      "study_time": 0,
+      "sessions": [
+        {
+          "classroom": "AULA F-212",
+          "duration": 2,
+          "day": "Wednesday",
+          "start": 14
+        },
+        {
+          "classroom": "AULA F-212",
+          "duration": 2,
+          "day": "Friday",
+          "start": 14
+        }
+      ]
+    },
+    {
+      "name": "ECUACIONES DIFERENCIALES 2 - FACULTAD DE INGENIERIA",
+      "professor": "Helver",
+      "semester": 1,
+      "subject": "ecuaciones diferenciales",
+      "quotas": 25,
+      "study_time": 0,
+      "sessions": [
+        {
+          "classroom": "AULA F - 207",
+          "duration": 2,
+          "day": "Wednesday",
+          "start": 14
+        },
+        {
+          "classroom": "AULA F - 207",
+          "duration": 2,
+          "day": "Friday",
+          "start": 14
+        }
+      ]
+    },
+    {
+      "name": "estadistica y probabilidad 104036 - ESTADISTICA Y PROBABILIDAD 1 - FACULTAD DE INGENIERIA",
+      "professor": "Juan David",
+      "semester": 2,
+      "subject": "estadistica y probabilidad",
+      "quotas": 30,
+      "study_time": 0,
+      "sessions": [
+        {
+          "classroom": "BLOQUE 16 - 102",
+          "duration": 2,
+          "day": "Friday",
+          "start": 10
+        },
+        {
+          "classroom": "BLOQUE 16 - 402",
+          "duration": 2,
+          "day": "Wednesday",
+          "start": 10
+        }
+      ]
+    },
+    {
+      "name": "estadistica y probabilidad 104036 - ESTADISTICA Y PROBABILIDAD 2 - FACULTAD DE INGENIERIA JORNADA EXTENDIDA",
+      "professor": "Juan David",
+      "semester": 2,
+      "subject": "estadistica y probabilidad",
+      "quotas": 30,
+      "study_time": 1,
+      "sessions": [
+        {
+          "classroom": "AULA F- 210",
+          "duration": 2,
+          "day": "Tuesday",
+          "start": 18
+        },
+        {
+          "classroom": "AULA F- 210",
+          "duration": 2,
+          "day": "Monday",
+          "start": 20
+        }
+      ]
+    }
+  ]
+}

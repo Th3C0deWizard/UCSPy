@@ -76,8 +76,8 @@ class UCSP(CSP):
         #         break
 
         if not possible:
-            variable.professor = random.choice(variable.course.potential_professors)
-            variable.day = random.choice(list(variable.professor.schedule.keys()))
+            variable.professor = random.choice(self.professors)
+            variable.day = random.choice(self.days)
             study_time = random.choice(self.study_times)
             start = random.choice(
                 range(study_time.start.hour, study_time.end.hour - variable.duration)
@@ -94,13 +94,14 @@ class UCSP(CSP):
 
         variable.classroom = random.choice(possible_classrooms)
 
-    def is_solved(self) -> Tuple[dict[Any, int], bool]:
-        constraints = {}
+    def is_solved(self) -> Tuple[List[Tuple[Session, int]], bool]:
+        constraints = []
         for variable in self.variables:
             if variable.course.fixed:
                 continue
-            constraints[variable] = self.check_constraints(variable)
-        return constraints, all([c == 0 for c in constraints.values()])
+            constraints.append((variable, self.check_constraints(variable)))
+        constraints.sort(reverse=True, key=lambda x: x[1])
+        return constraints, constraints[0][1] == 0
 
     def check_constraints(self, variable: Session):
         constraints = 0
@@ -280,13 +281,34 @@ class UCSP(CSP):
                             hour=temp_time_range.start.hour + 1
                         )
 
-        return min(domain, key=domain.get)
+        # if the minimun number of constraints is the same as the current variable, then try to assign other variable with same number of constraints if posible
+        sorted_constraints = sorted(domain.items(), key=lambda x: x[1])
+        prev = sorted_constraints[0][1]
+        min_session = sorted_constraints[0]
+        for var, ctr in sorted_constraints:
+            if prev != ctr:
+                break
+            if not self.are_equal(var, variable):
+                min_session = (var, ctr)
+                break
+            prev = ctr
+
+        return min_session
 
     def equals_variable(self, variable: Session, new_variable: Session):
         variable.day = new_variable.day
         variable.time_range = new_variable.time_range
         variable.professor = new_variable.professor
         variable.classroom = new_variable.classroom
+
+    def are_equal(self, a: Session, b: Session):
+        return (
+            a.day == b.day
+            and a.time_range == b.time_range
+            and a.professor.name == b.professor.name
+            and a.classroom.name == b.classroom.name
+            and a.course.name == b.course.name
+        )
 
     def print_solution(self):
         for course in self.courses:
