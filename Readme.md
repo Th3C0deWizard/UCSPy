@@ -1,7 +1,7 @@
 # UCSP Solver
 
 This is a python program that can solve the University Course Scheduling Problem (UCSP)
-using a local search approach. 
+using a local search approach.
 
 ## How to use?
 
@@ -23,4 +23,7 @@ If you wan to run a different number of executions and with a different max numb
     python ucsp/main.py <input_data.json> -e <number_of_executions> -m <max_number_of_iterations>
 ```
 
-...
+## Report
+
+The report can be found in the file report.pdf in the root of the project. It contains a detailed explanation of the UCSP problem, the localsearch algorithm used to solve it and the results of the experiments.  
+Note: The report is in spanish.
